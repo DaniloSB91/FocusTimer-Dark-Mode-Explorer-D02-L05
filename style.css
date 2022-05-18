@@ -4,10 +4,22 @@
     --body-background: #E5E5E5;
     --btn-background: #E1E1E6;
     --btn-selected-background: #02799D;
+    --btn-shadow-color: rgba(0, 0, 0, 0.25);
+
 
 
     font-size: 62.5%;
 }
+
+:root .darkMode {
+    --font-color: #FFFFFF;
+    --body-background: #121214;
+    --btn-background: #29292E;
+    --btn-selected-background: #0A3442;
+    --btn-shadow-color: rgba(247, 245, 245, 0.25);
+
+}
+
 
 * {
     margin: 0;
@@ -16,13 +28,22 @@
 }
 
 body {
-    background: var(--body-background);
+
     font-family: 'Roboto', sans-serif;
     font-size: medium;
     min-height: 100vh;
     display: grid;
 
 }
+
+.darkMode {
+    background-color: #121214;
+
+}
+
+
+
+
 
 main {
     align-self: end;
@@ -40,8 +61,8 @@ aside {
 
 .timer {
     display: flex;
-
     font-size: 12.6rem;
+    color: var(--font-color);
 }
 
 main button {
@@ -52,30 +73,29 @@ main button {
 
 }
 
+
+
 .controls {
     display: flex;
-
     gap: 4rem;
     justify-content: center;
 
+}
+
+.controls button svg path {
+    fill: var(--font-color);
 }
 
 .hide {
     display: none;
 }
 
-aside button {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: var(--btn-background);
-    border-radius: 2.4rem;
-    border: none;
-    cursor: pointer;
-}
 
-.buttonOn {
-    background: var(--btn-selected-background);
+
+.card  .buttonOn {
+    background: var(--btn-selected-background)!important;
     fill: var(--btn-background);
-   
+
 }
 
 
@@ -91,10 +111,80 @@ aside button {
 
 }
 
-.sounds button {
-    width: 138px;
-    height: 152px;
+.card button svg path {
+    fill: var(--font-color);
 }
+
+ .active svg path {
+    fill: var(--font-color);
+}
+
+.active svg path+path {
+    fill: var(--font-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    filter: drop-shadow(0px 4px 4px var(--btn-shadow-color));
+    background: var(--btn-background);
+    border-radius: 2.4rem;
+    border: none;
+    cursor: pointer;
+    width: 13.8rem;
+    height: 15.2rem;
+    cursor: pointer;
+}
+
+input[type=range] {
+    appearance: none;
+    width: 9rem;
+    height: 0.8rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--font-color);
+    outline: none;
+}
+
+
+
+
+
+
+.sounds button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+
+.day,
+.night {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+}
+
+.day {
+    margin: 6rem 6rem 0 0;
+}
+
+.night {
+    margin: 6.4rem 6.4rem 0 0;
+}
+
+
 
 @media (min-width:800px) {
     body {
