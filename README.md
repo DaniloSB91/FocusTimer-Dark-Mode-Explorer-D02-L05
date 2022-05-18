@@ -25,7 +25,7 @@ Funcionalidades dos botões:
 
 ➖ : diminui em 5 minutos o tempo do timer.
 
-🌞/🌙 : Botão todo do modo Claro / Escuro 
+🌞/🌙 : Alterar entre os modos Claro e Escuro 
 
 Volume nos cards de som ambiente. 
 
