@@ -1,8 +1,6 @@
 # FocusTimer-Dark-Mode-Explorer-D02-L05
 Desafio FocusTimer Dark Mode - Rocketseat Explorer Desafio 02 e Level 05
 
-Desafio FocusTimer - Versão 2.0 - Rocketseat Explorer Desafio 01 e Level 05
-
 Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor e emitir um som diferente.
 
 Floresta
