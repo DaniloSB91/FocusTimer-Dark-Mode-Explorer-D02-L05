@@ -16,11 +16,17 @@ Lareira
 Funcionalidades dos botões:
 
 ▶ : aciona o timer;
+
 ⏸ : para o timer;
+
 ⏹ : reinicia o timer;
+
 ➕ : aumenta em mais 5 minutos o tempo do timer;
+
 ➖ : diminui em 5 minutos o tempo do timer.
+
 🌞/🌙 : Botão todo do modo Claro / Escuro 
+
 Volume nos cards de som ambiente. 
 
 
